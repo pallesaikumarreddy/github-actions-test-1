@@ -1,13 +1,13 @@
 name: github-test
-on: workflow_dispatch
+on: push
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: build
         run: |
-          echo "build is started"
-          echo "build is completed"
+          echo "build is not started"
+          echo "build is not completed"
   test:
     runs-on: ubuntu-latest
     needs: build
