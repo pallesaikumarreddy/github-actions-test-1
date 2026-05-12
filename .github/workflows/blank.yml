@@ -6,16 +6,16 @@ jobs:
     steps:
       - name: build
         run: |
-          echo "build is not started"
-          echo "build is not completed"
+          echo "build is not ${{ vars.START }}"
+          echo "build is not ${{ vars.COMPLETE }}"
   test:
     runs-on: ubuntu-latest
     needs: build
     steps:
       - name: test
         run: |
-          echo "test is started"
-          echo "test is completed"
+          echo "test is  ${{vars.START }}"
+          echo "test is ${{ vars.COMPLETE }}"
 
   deploy:
     runs-on: ubuntu-latest
