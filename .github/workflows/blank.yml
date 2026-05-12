@@ -1,20 +1,28 @@
 name: github-test
 on: workflow_dispatch
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: build
+        run: |
+          echo "build is started"
+          echo "build is completed"
+jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Update and Install Node.js
+      - name: test
         run: |
-          # Update the package index
-          sudo apt-get update
-          
-          # Install Node.js and npm manually
-          # The -y flag is crucial for automation!
-          sudo apt-get install -y nodejs npm
-          
-      - name: Verify versions
+          echo "test is started"
+          echo "test is completed"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy
         run: |
-          node -v
-          npm -v
-      
+          echo "deploy is started"
+          echo "deploy is completed"
+       
