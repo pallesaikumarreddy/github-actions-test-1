@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: build
         run: |
-          echo "build is not ${{ vars.START }}"
+          echo "build is not ${{ vars.START }}    ${{ secrets.NAME }}"
           echo "build is not ${{ vars.COMPLETE }}"
   test:
     runs-on: ubuntu-latest
