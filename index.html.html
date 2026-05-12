@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - P SAIKUMAR REDDY</title>
+    <style>
+        /* Page and Body Setup */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.5;
+            color: #333;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .resume-container {
+            max-width: 850px;
+            margin: 20px auto;
+            padding: 40px;
+            background: #fff;
+            box-sizing: border-box;
+        }
+
+        /* Header Styling */
+        header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        header h1 {
+            font-size: 26px;
+            font-weight: bold;
+            color: #1f3864; /* Matching the dark blue/slate tone */
+            margin: 0 0 5px 0;
+            letter-spacing: 0.5px;
+        }
+
+        .contact-info {
+            font-size: 13px;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        .role-title {
+            font-size: 14px;
+            font-weight: bold;
+            color: #2e5b88;
+            margin-top: 5px;
+        }
+
+        /* Section Titles matching the screenshot's thick line */
+        section {
+            margin-bottom: 22px;
+        }
+
+        h2.section-title {
+            font-size: 15px;
+            font-weight: bold;
+            color: #1f3864;
+            text-transform: uppercase;
+            border-bottom: 2px solid #5b9bd5; /* Thicker colored accent line */
+            padding-bottom: 4px;
+            margin: 0 0 15px 0;
+        }
+
+        /* General Lists */
+        ul.bullet-list {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        ul.bullet-list li {
+            font-size: 13px;
+            margin-bottom: 6px;
+            text-align: justify;
+        }
+
+        /* Technical Skills - 3 Column Grid Layout */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 25px;
+            row-gap: 20px;
+            font-size: 12.5px;
+        }
+
+        .skill-category {
+            line-height: 1.4;
+        }
+
+        .skill-category strong {
+            color: #1f3864;
+            display: inline;
+        }
+
+        .skill-items {
+            color: #444;
+        }
+
+        /* Professional Experience Layout */
+        .job-entry {
+            margin-bottom: 18px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-size: 13.5px;
+            font-weight: bold;
+            color: #1f3864;
+        }
+
+        .job-sub-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-size: 13px;
+            font-style: italic;
+            color: #555;
+            margin-bottom: 6px;
+        }
+
+        .project-title {
+            font-size: 13px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 6px;
+        }
+
+        /* Education Layout */
+        .edu-entry {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+        }
+
+        /* Print Optimization */
+        @media print {
+            body { background: none; }
+            .resume-container {
+                margin: 0;
+                padding: 0;
+                max-width: 100%;
+            }
+            @page {
+                size: A4;
+                margin: 15mm 20mm;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="resume-container">
+
+    <header>
+        <h1>P SAIKUMAR REDDY</h1>
+        <div class="contact-info">
+            Mobile: +91-7799229982 | E-mail: pallesaikumarreddy97@gmail.com | Location: Noida
+        </div>
+        <div class="role-title">
+            DevOps Engineer | multi Cloud Engineer | Infrastructure Automation Specialist
+        </div>
+    </header>
+
+    <section>
+        <h2 class="section-title">Professional Summary</h2>
+        <ul class="bullet-list">
+            <li>DevOps Engineer with around 5 years of experience in AWS cloud architecture, infrastructure automation, and CI/CD implementation.</li>
+            <li>Expert in containerization (Docker, Kubernetes), Infrastructure as Code (Terraform, Ansible), and cloud cost optimization.</li>
+            <li>Proven track record in implementing automated solutions that improve system reliability and operations.</li>
+            <li>Strong background in AWS services, Kubernetes orchestration, and infrastructure automation tools.</li>
+            <li>Certified AWS Solutions Architect with expertise in cloud migration, security, and high-availability architecture.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <strong>Cloud Platforms:</strong> 
+                <span class="skill-items">Amazon Web Services (AWS), EC2, S3, RDS, Lambda, VPC, Route53, CloudFront, CloudWatch, CloudTrail, IAM, Auto Scaling, ECS,EKS </span>
+            </div>
+             <div class="skill-category">
+                <strong>AZURE:</strong> 
+                <span class="skill-items"> VM, storage account, function app, vnet, azure front door,azure moitor, Microsoft Entra ID, AKS </span>
+            </div>
+             <div class="skill-category">
+                <strong>GCP:</strong> 
+                <span class="skill-items"> </span>
+            </div>
+            <div class="skill-category">
+                <strong>Infrastructure as Code:</strong> 
+                <span class="skill-items">Terraform, CloudFormation, Ansible, YAML</span>
+            </div>
+            <div class="skill-category">
+                <strong>Containerization & Orchestration:</strong> 
+                <span class="skill-items">Docker, Kubernetes, ECS, EKS, AKS, GKE, Container Security, Microservices</span>
+            </div>
+
+            <div class="skill-category">
+                <strong>CI/CD & Automation:</strong> 
+                <span class="skill-items">Jenkins, GitLab CI/CD, GitHub Actions, Maven, AWS CodePipeline</span>
+            </div>
+            <div class="skill-category">
+                <strong>Monitoring & Logging:</strong> 
+                <span class="skill-items">Prometheus, Grafana, CloudWatch, Azure Monitor, ELK Stack, Nagios, Log Management</span>
+            </div>
+            <div class="skill-category">
+                <strong>Scripting & Programming:</strong> 
+                <span class="skill-items">Bash Shell Scripting, Python, YAML, JSON, Automation Scripts</span>
+            </div>
+
+            <div class="skill-category">
+                <strong>Version Control:</strong> 
+                <span class="skill-items">Git, GitLab, GitHub, Branching Strategies</span>
+            </div>
+            <div class="skill-category">
+                <strong>Operating Systems:</strong> 
+                <span class="skill-items">Linux (Ubuntu, CentOS), Windows Server, System Administration</span>
+            </div>
+            <div class="skill-category">
+                <strong>Databases:</strong> 
+                <span class="skill-items">MySQL, MongoDB, Database Administration</span>
+            </div>
+
+            <div class="skill-category">
+                <strong>Security & Compliance:</strong> 
+                <span class="skill-items">AWS Security Groups, IAM Policies, SSL/TLS, Security Best Practices, Compliance Standards</span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">Professional Experience</h2>
+
+        <div class="job-entry">
+            <div class="job-header">
+                <span>DevOps Engineer</span>
+                <span>January 2024 - Present</span>
+            </div>
+            <div class="job-sub-header">
+                <span>PROLAX IT SOLUTIONS PRIVATE LIMITED | Hyderabad</span>
+            </div>
+            <div class="project-title">Project: Reality (Blockchain-based Tokenization)</div>
+            <ul class="bullet-list">
+                <li>Implemented enterprise-grade containerization strategy using Docker and Kubernetes, resulting in 40% faster deployment times and 35% reduction in infrastructure costs.</li>
+                <li>Designed and implemented automated CI/CD pipelines using Jenkins and GitLab, reducing deployment time by 60% and eliminating manual deployment errors.</li>
+                <li>Created and maintained Terraform modules for infrastructure provisioning, achieving 99.91% infrastructure consistency across environments.</li>
+                <li>Implemented comprehensive monitoring using Prometheus and Grafana, reducing incident response time by 45%.</li>
+                <li>Automated backup and recovery processes, achieving 99.90% data availability and reducing recovery time by 70%.</li>
+                <li>Implemented Infrastructure as Code (IaC) using Terraform and Ansible for automated infrastructure provisioning and configuration management.</li>
+                <li>Managed microservices architecture using Kubernetes for improved scalability and maintainability.</li>
+                <li>Established and maintained automated security compliance checks, reducing security vulnerabilities by 50%.</li>
+                <li>Implemented automated scaling solutions for high-traffic applications, improving system performance by 40%.</li>
+                <li>Created and maintained comprehensive documentation for infrastructure and deployment processes.</li>
+            </ul>
+        </div>
+
+        <div class="job-entry">
+            <div class="job-header">
+                <span>DevOps Engineer</span>
+                <span>June 2022 - December 2023</span>
+            </div>
+            <div class="job-sub-header">
+                <span>Pangean Global Services | Hyderabad</span>
+            </div>
+            <div class="project-title">Project: T-Chits (Telangana Government Project)</div>
+            <ul class="bullet-list">
+                <li>Led AWS cloud migration initiative, resulting in 50% cost reduction and 40% improved application performance.</li>
+                <li>Implemented Infrastructure as Code (IaC) using Terraform and Ansible, reducing provisioning time from days to 30 minutes.</li>
+                <li>Designed and implemented high-availability architecture using AWS services, achieving 99.95% uptime.</li>
+                <li>Automated security group management and implemented least-privilege access policies, reducing security incidents by 60%.</li>
+                <li>Created automated scaling solutions using AWS Auto Scaling, optimizing resource utilization by 35%.</li>
+                <li>Implemented container orchestration using Kubernetes for microservices architecture.</li>
+                <li>Managed CI/CD pipelines for multiple applications using Jenkins and GitLab.</li>
+                <li>Established automated backup and disaster recovery procedures, ensuring 99.99% data availability.</li>
+                <li>Implemented comprehensive logging and monitoring solutions using ELK stack and Prometheus.</li>
+                <li>Created and maintained infrastructure documentation and runbooks for team reference.</li>
+            </ul>
+        </div>
+
+        <div class="job-entry">
+            <div class="job-header">
+                <span>System Administrator</span>
+                <span>June 2021 - June 2022</span>
+            </div>
+            <div class="job-sub-header">
+                <span>Quees Corp Ltd | Hyderabad</span>
+            </div>
+            <ul class="bullet-list">
+                <li>Implemented automated backup solutions, achieving 99.9% backup success rate; managed version control systems and implemented branching strategies using Git.</li>
+                <li>Managed and troubleshooted IT hardware, software, and networks, ensuring 99.9% system uptime.</li>
+                <li>Supported user accounts, email systems, and internal tools, maintaining 100% SLA compliance; maintained system security and backups, implementing automated backup verification procedures.</li>
+                <li>Ensured smooth day-to-day IT operations through proactive monitoring and maintenance; managed client tickets with 100% adherence to resolution timeframes, achieving zero escalations.</li>
+                <li>Performed root cause analysis for critical issues and implemented preventive measures.</li>
+                <li>Coordinated with on-site teams for complex problem resolution, ensuring timely service delivery; maintained comprehensive documentation of system configurations and troubleshooting procedures.</li>
+                <li>Implemented automated monitoring for critical systems and services.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">Key Achievements</h2>
+        <ul class="bullet-list">
+            <li>Reduced deployment time by 60% through implementation of automated CI/CD pipelines and containerization.</li>
+            <li>Achieved 99.95% system uptime through implementation of high-availability architecture and automated failover.</li>
+            <li>Reduced infrastructure costs by 25% through containerization and resource optimization; decreased security incidents by 60% through implementation of automated security policies and compliance checks.</li>
+            <li>Improved system reliability by 40% through comprehensive monitoring solutions and proactive maintenance.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2 class="section-title">Education</h2>
+        <div class="edu-entry">
+            <span><strong>B.Tech in Mechanical Engineering</strong> — MLR College of Engineering, JNTUH</span>
+            <span>2010</span>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">Certifications</h2>
+        <ul class="bullet-list">
+            <li>AWS Certified Solutions Architect - Associate</li>
+        </ul>
+    </section>
+
+</div>
+
+</body>
+</html>
