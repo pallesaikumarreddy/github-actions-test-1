@@ -1,4 +1,4 @@
-name: Deploy HTML to S3
+name: print the vm 
 on: workflow_dispatch
 
 jobs:
